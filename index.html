@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title>Pixel Frame Maker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <h1>Pixel Animation Maker</h1>
+      <div id="pixel-question" class="visible">
+        <label for="pixel-count">How many pixels wide?</label>
+        <input type="text" id="pixel-count" name="pixel-count"></input>
+        <button id="pixel-btn" type="submit">Submit</button>
+      </div>
+      <div id="controls" class="default-width">
+        <!-- <button id="test" class="btn-sm">Test</button> -->
+        <button id="grid-toggle" class="btn-sm">Grid</button>
+        <button id="frames-show-btn" class="btn-sm"><span id="big-frames">Frames:</span><span id="frame-no"> 0</span></button>
+        <button id="delete-btn" class="btn-sm">Clear</button>
+      </div>
+      <button id="screenshot-btn" class="default-width">
+        Capture Frame
+      </button>
+
+      <div id="main-body">
+
+        <div id="pixel-container" class="default-styling-700"></div>
+
+        <div id="select-container">
+          <span id="white" class="colour white"></span>
+          <span id="black" class="colour grey"></span>
+          <span id="black" class="colour black"></span>
+          <span id="red" class="colour red"></span>
+          <span id="orange" class="colour orange"></span>
+          <span id="yellow" class="colour yellow"></span>
+          <span id="green" class="colour green"></span>
+          <span id="blue" class="colour blue"></span>
+          <span id="purple" class="colour purple"></span>
+          <span id="pink" class="colour pink"></span>
+        </div>
+
+        <div id="chosen-colour">
+          <span id="show-colour" class="white"></span>
+        </div>
+
+      </div>
+
+      <div id="screenshot-result"  class="hidden default-styling-700"></div>
+      <button id="gif-btn" type="submit">Animate Frames</button>
+      <div id="gif" class="hidden default-styling-700">
+      </div>
+      <div id="canvas-holder">
+      <canvas id="canvas" width="600px" height="600px" class="default-styling-700"></canvas>
+      </div>
+    </main>
+    <script src="js/gamelogic.js"></script>
+  </body>
+</html>
