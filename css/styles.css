@@ -290,3 +290,7 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+
+.btn-xs {
+    height: 42px;
+}

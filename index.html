@@ -53,10 +53,22 @@
       <button id="gif-btn" type="submit">Animate Frames</button>
       <div id="gif" class="hidden default-styling-700">
       </div>
+      <div id="animation-controls" class="default-width">
+        <div id="current-frame">
+          <button id="prev-frame" class="btn-xs">&lt;</button>
+          <span id="big-current-frame">Frame:</span>
+          <span id="current-frame-no"> 0</span>
+          <button id="next-frame" class="btn-xs">&gt;</button>
+        </div>
+        <button id="pause-animation" class="btn-xs">&#9208;</button>
+        <button id="play-animation" class="btn-xs">&#9658;</button>
+        <button id="delete-frame" class="btn-xs">Delete</button>
+      </div>
       <div id="canvas-holder">
-      <canvas id="canvas" width="600px" height="600px" class="default-styling-700"></canvas>
+      <canvas id="canvas" width="600px" height="600px"></canvas>
       </div>
     </main>
     <script src="js/gamelogic.js"></script>
+    <script src="js/animation-control.js"></script>
   </body>
 </html>
